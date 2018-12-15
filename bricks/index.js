@@ -1,4 +1,4 @@
-console.log(10);
+console.log(11);
 let bullets = 1;
 let g = [];
 let shooting = false;
