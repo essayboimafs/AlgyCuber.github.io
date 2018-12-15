@@ -1,4 +1,4 @@
-//judge
+//mega
 let bullets = 1;
 let g = [];
 let shooting = false;
@@ -60,7 +60,7 @@ function draw(){
 			}
 			else if(g[i][j]<0){
 				fill(220,232,242);
-				circle(j*70+36,i*40+21,16,16);
+				ellipse(j*70+36,i*40+21,16,16);
 			}
 		}
 	}
