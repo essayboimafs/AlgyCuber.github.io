@@ -35,6 +35,7 @@ function draw(){
 				zeroI = i;
 				θ = -θ;
 			}
+			console.log(center);
 		}
 	}
 	stroke(0);
