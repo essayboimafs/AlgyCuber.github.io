@@ -1,4 +1,4 @@
-//cooker
+//judge
 let bullets = 1;
 let g = [];
 let shooting = false;
@@ -52,12 +52,15 @@ function draw(){
 	fill(66,173,244);
 	rect(191,480,40,40);
 	//update
-	noStroke();
 	for(let i=0;i<13;i++){
 		for(let j=0;j<6;j++){
 			if(g[i][j]>0){
 				fill(152,244,66);
 				rect(j*70+1,i*40+1,70,40);
+			}
+			else if(g[i][j]<0){
+				fill(220,232,242);
+				circle(j*70+36,i*40+21,16,16);
 			}
 		}
 	}
