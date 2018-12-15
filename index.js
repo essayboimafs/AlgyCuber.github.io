@@ -1,7 +1,7 @@
 let bullets = 1;
 let bricks = [];
 let shooting = false;
-let θ = null;//donkeypoop
+let θ = null;
 let TAU = 2*Math.PI; //milk hates this
 function deg2rad(n){return n*DEG_TO_RAD;}
 function rad2deg(n){return n*RAD_TO_DEG;}
@@ -23,6 +23,7 @@ function draw(){
 		let θy = 1;
 		let center = [211,509];
 		let zeroI = 0;
+		let bounce = false;
 		for(let i=0;i<231;i++){
 			stroke(i);
 			strokeWeight(2);
@@ -30,10 +31,11 @@ function draw(){
 			     center[1]-2*(i-zeroI)*Math.cos(θ)*θy,
 			     center[0]+2*(i-zeroI+2)*Math.sin(θ),
 			     center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy);
-			if(211+2*(i+2)*Math.sin(θ)>width || 211+2*(i+2)*Math.sin(θ)<0){
+			if((211+2*(i+2)*Math.sin(θ)>width || 211+2*(i+2)*Math.sin(θ)<0) && !bounce){
 				center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
 				zeroI = i;
 				θ = -θ;
+				bounce = true;
 			}
 		}
 	}
