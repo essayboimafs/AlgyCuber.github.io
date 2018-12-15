@@ -20,12 +20,19 @@ function draw(){
 		else{θ = null;}
 	}
 	if(θ!=null){
+		let θy = 1;
+		let center = [211,509];
+		let zeroI = 0;
 		for(let i=0;i<231;i++){
 			stroke(i);
 			strokeWeight(2);
-			line(211+2*i*Math.sin(θ),509-2*i*Math.cos(θ),211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ));
+			line(center[0]+2*(i-zeroI)*Math.sin(θ),
+			     center[1]-2*(i-zeroI)*Math.cos(θ)*θy,
+			     center[0]+2*(i-zeroI+2)*Math.sin(θ),
+			     center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy);
 			if(211+2*(i+2)*Math.sin(θ)>width){
-			line(211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ),-211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ));
+				zeroI = i;
+				center = [center[0]+2*(i-zeroI)*Math.sin(θ),center[1]-2*(i-zeroI)*Math.cos(θ)*θy];
 			}
 		}
 	}
