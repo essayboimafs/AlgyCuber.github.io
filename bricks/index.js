@@ -1,4 +1,4 @@
-console.log(1100);
+console.log(1101);
 let bullets = 1;
 let g = [];
 let shooting = false;
@@ -46,13 +46,13 @@ function draw(){
 					for(let j=0; j<6; j++){
 						if(g[k][j]>0 && center[0]+2*(i-zeroI+2)*Math.sin(θ)>j*70+1 && center[0]+2*(i-zeroI+2)*Math.sin(θ)<j*70+71&&center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy<i*40+41&&center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy>i*40+1){
 							if(center[1]-2*(i-zeroI+1)*Math.cos(θ)*θy>(i-1)*40+41){
-							center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
-							zeroI = i;
-							θy = -θy;
+								center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
+								zeroI = i;
+								θy = -θy;
 							}
 							else{
-							center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
-							zeroI = i;
+								center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
+								zeroI = i;
 								θ = -θ;
 								
 							}
