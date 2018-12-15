@@ -1,3 +1,4 @@
+//gecko
 let bullets = 1;
 let bricks = [];
 let shooting = false;
@@ -7,7 +8,6 @@ function deg2rad(n){return n*DEG_TO_RAD;}
 function rad2deg(n){return n*RAD_TO_DEG;}
 function setup(){
 	createCanvas(422,522);
-	console.log('gecko');
 }
 function draw(){
 	background(230);
