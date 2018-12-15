@@ -1,4 +1,4 @@
-//00
+//01
 let bullets = 1;
 let g = [];
 let shooting = false;
@@ -15,6 +15,7 @@ function setup(){
 		}
 	}
 	textAlign(CENTER);
+	font();
 }
 function draw(){
 	background(230);
@@ -57,6 +58,7 @@ function draw(){
 			if(g[i][j]>0){
 				fill(152,244,66);
 				rect(j*70+1,i*40+1,70,40);
+				fill(0);
 				text(g[i][j],j*70+36,i*40+21);
 			}
 			else if(g[i][j]<0){
