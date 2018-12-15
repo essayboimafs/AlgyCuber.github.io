@@ -1,4 +1,4 @@
-//mega
+//00
 let bullets = 1;
 let g = [];
 let shooting = false;
@@ -57,6 +57,7 @@ function draw(){
 			if(g[i][j]>0){
 				fill(152,244,66);
 				rect(j*70+1,i*40+1,70,40);
+				text(g[i][j],j*70+36,i*40+21);
 			}
 			else if(g[i][j]<0){
 				fill(220,232,242);
