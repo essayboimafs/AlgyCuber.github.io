@@ -1,4 +1,4 @@
-console.log(7);
+console.log(8);
 let bullets = 1;
 let g = [];
 let shooting = false;
@@ -52,7 +52,7 @@ function draw(){
 							θ = -θ;
 							}
 							else{
-							θy *= -1;
+							//θy *= -1;
 							}
 						}
 						else if(g[k][j]>0 && center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy>k*40+1 && center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy<k*40+41){
