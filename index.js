@@ -57,7 +57,7 @@ function draw(){
 		for(let j=0;j<6;j++){
 			if(g[i][j]>0){
 				fill(152,244,66);
-				rect(i*70+1,i*40+1,70,40);
+				rect(j*70+1,i*40+1,70,40);
 			}
 		}
 	}
