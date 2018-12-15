@@ -20,25 +20,25 @@ function draw(){
 		}
 		else{θ = null;}
 		if(θ!=null){
-		let θy = 1;
-		let center = [211,509];
-		let zeroI = 0;
-		let bounce = false;
-		for(let i=0;i<231;i++){
-			stroke(i);
-			strokeWeight(2);
-			line(center[0]+2*(i-zeroI)*Math.sin(θ),
-			     center[1]-2*(i-zeroI)*Math.cos(θ)*θy,
-			     center[0]+2*(i-zeroI+2)*Math.sin(θ),
-			     center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy);
-			if((211+2*(i+2)*Math.sin(θ)>width || 211+2*(i+2)*Math.sin(θ)<0) && !bounce){
-				center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
-				zeroI = i;
-				θ = -θ;
-				bounce = true;
+			let θy = 1;
+			let center = [211,509];
+			let zeroI = 0;
+			let bounce = false;
+			for(let i=0;i<231;i++){
+				stroke(i);
+				strokeWeight(2);
+				line(center[0]+2*(i-zeroI)*Math.sin(θ),
+				     center[1]-2*(i-zeroI)*Math.cos(θ)*θy,
+				     center[0]+2*(i-zeroI+2)*Math.sin(θ),
+				     center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy);
+				if((211+2*(i+2)*Math.sin(θ)>width || 211+2*(i+2)*Math.sin(θ)<0) && !bounce){
+					center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
+					zeroI = i;
+					θ = -θ;
+					bounce = true;
+				}
 			}
 		}
-	}
 	}
 	stroke(0);
 	strokeWeight(1);
