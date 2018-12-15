@@ -24,8 +24,8 @@ function draw(){
 			stroke(i);
 			strokeWeight(2);
 			line(211+2*i*Math.sin(θ),509-2*i*Math.cos(θ),211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ));
-			if(211+2*(i+2)*Math.sin(θ)){
-				line(211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ),-211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ));
+			if(211+2*(i+2)*Math.sin(θ)>width){
+			line(211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ),-211+2*(i+2)*Math.sin(θ),509-2*(i+2)*Math.cos(θ));
 			}
 		}
 	}
