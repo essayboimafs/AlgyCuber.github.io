@@ -30,7 +30,7 @@ function draw(){
 			     center[1]-2*(i-zeroI)*Math.cos(θ)*θy,
 			     center[0]+2*(i-zeroI+2)*Math.sin(θ),
 			     center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy);
-			if(211+2*(i+2)*Math.sin(θ)>width){
+			if(211+2*(i+2)*Math.sin(θ)>width || 211+2*(i+2)*Math.sin(θ)<0){
 				center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
 				zeroI = i;
 				θ = -θ;
