@@ -1,4 +1,4 @@
-//03
+//04
 let bullets = 1;
 let g = [];
 let shooting = false;
@@ -38,11 +38,21 @@ function draw(){
 				     center[1]-2*(i-zeroI)*Math.cos(θ)*θy,
 				     center[0]+2*(i-zeroI+2)*Math.sin(θ),
 				     center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy);
-				if((211+2*(i+2)*Math.sin(θ)>width || 211+2*(i+2)*Math.sin(θ)<0) && !bounce){
+				if((center[0]+2*(i-zeroI+2)*Math.sin(θ)>width || center[0]+2*(i-zeroI+2)*Math.sin(θ)<0) && !bounce){
 					center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
 					zeroI = i;
 					θ = -θ;
 					bounce = true;
+				}
+				for(let k=0; k<13; k++){
+					for(let j=0; j<6; j++){
+					if(g[k][j]>0&&center[0]+2*(i-zeroI+2)*Math.sin(θ)>j*70+1&&center[0]+2*(i-zeroI+2)*Math.sin(θ)<j*70+71&&center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy>k*40+1&&center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy<k*40+41){
+					center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
+					zeroI = i;
+					θ = -θ;
+					bounce = true;
+					}
+				}
 				}
 			}
 		}
