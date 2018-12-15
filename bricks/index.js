@@ -47,7 +47,7 @@ function draw(){
 						if(g[k][j]>0 && center[0]+2*(i-zeroI+2)*Math.sin(θ)>j*70+1 && center[0]+2*(i-zeroI+2)*Math.sin(θ)<j*70+71&&center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy<i*40+41&&center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy>i*40+1){
 							center = [center[0]+2*(i-zeroI+2)*Math.sin(θ),center[1]-2*(i-zeroI+2)*Math.cos(θ)*θy];
 							zeroI = i;
-							θ = -θ;
+							θy = -θy;
 						}
 					}
 				}
