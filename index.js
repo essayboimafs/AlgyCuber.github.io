@@ -1,4 +1,4 @@
-//geck
+//cookie
 let bullets = 1;
 let bricks = [];
 let shooting = false;
