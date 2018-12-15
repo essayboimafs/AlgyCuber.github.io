@@ -1,7 +1,7 @@
 let bullets = 1;
 let bricks = [];
 let shooting = false;
-let θ = null;//donkeybutt
+let θ = null;//donkeypoop
 let TAU = 2*Math.PI; //milk hates this
 function deg2rad(n){return n*DEG_TO_RAD;}
 function rad2deg(n){return n*RAD_TO_DEG;}
