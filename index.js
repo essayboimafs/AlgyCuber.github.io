@@ -1,6 +1,6 @@
-//cookie
+//cooker
 let bullets = 1;
-let bricks = [];
+let g = [];
 let shooting = false;
 let θ = null;
 let TAU = 2*Math.PI; //milk hates this
@@ -8,6 +8,13 @@ function deg2rad(n){return n*DEG_TO_RAD;}
 function rad2deg(n){return n*RAD_TO_DEG;}
 function setup(){
 	createCanvas(422,522);
+	for(let i=0;i<13;i++){
+		g.push([]);
+		for(let j=0;j<6;j++){
+			g[i].push(0); //positive = brick, 0 = blank, -1 = bullet
+		}
+	}
+	textAlign(CENTER);
 }
 function draw(){
 	background(230);
@@ -44,8 +51,22 @@ function draw(){
 	strokeWeight(1);
 	fill(66,173,244);
 	rect(191,480,40,40);
+	//update
+	noStroke();
+	for(let i=0;i<13;i++){
+		for(let j=0;j<6;j++){
+			if(g[i][j]>0){
+				fill(152,244,66);
+				rect(i*70+1,i*40+1,70,40);
+			}
+		}
+	}
+	
 }
 function mousePressed(){shooting = true;}
 function genLayer(){
+	function shiftDown(){}
+	function genBullet(){}
+	function genBrick(){}
 	if(bullets<6){}
 }
