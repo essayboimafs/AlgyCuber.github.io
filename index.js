@@ -15,7 +15,6 @@ function setup(){
 		}
 	}
 	textAlign(CENTER);
-	font();
 }
 function draw(){
 	background(230);
