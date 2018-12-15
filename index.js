@@ -19,8 +19,7 @@ function draw(){
 			else if(rad2deg(θ)<-85 || (mouseX<211 && θ>0)){θ = -deg2rad(85);}
 		}
 		else{θ = null;}
-	}
-	if(θ!=null){
+		if(θ!=null){
 		let θy = 1;
 		let center = [211,509];
 		let zeroI = 0;
@@ -39,6 +38,7 @@ function draw(){
 				bounce = true;
 			}
 		}
+	}
 	}
 	stroke(0);
 	strokeWeight(1);
