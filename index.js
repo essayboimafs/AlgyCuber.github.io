@@ -1,4 +1,4 @@
-//gecko
+//geck
 let bullets = 1;
 let bricks = [];
 let shooting = false;
