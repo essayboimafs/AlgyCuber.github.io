@@ -1,4 +1,4 @@
-console.log(8);
+console.log(9);
 let lvls = [{
   world:1,
   lvl:1,
@@ -7,64 +7,64 @@ let lvls = [{
   theme:0, //0 = overworld, 1 = underground, 2 = island, 3 = castle, 4 = sky, 5 = underwater
   night:false,
   snow:false,
-  layout:[[2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         [2, 2, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         ]
+  layout:[[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         [1, 1, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  ],
+  startPoint:[3,2]
 }];
 /*
   0 = empty
-  1 = char start
-  2 = ground
-  3 = brick
-  4 = stair
-  5 = coin
-  6 = question
-  7 = invis question
-  8 = pipe top
-  9 = pipe shaft
-  10 = question done
-  11 = end point
+  1 = ground
+  2 = brick
+  3 = stair
+  4 = coin
+  5 = question
+  6 = invis question
+  7 = pipe top
+  8 = pipe shaft
+  9 = question done
+  10 = end point
 */
-let currentLvl = 0;
+let currentRoom = 0;
 function character(ox, oy){
   this.x = ox;
   this.y = oy;
   this.draw1 = function(){
-  ellipse(this.x,this.y,20,20);
+    ellipse(this.x,this.y,20,20);
   }
 }
-function enemy(ox, oy){
+/*function enemy(ox, oy){
   this.x = ox;
   this.y = oy;
   this.draw1 = function(){
-  ellipse(this.x,this.y,20,20);
+    ellipse(this.x,this.y,20,20);
   }
-}
+}*/
 let ch;
 function setup(){
   createCanvas(512,512)
-  ch = new character();
+  ch = new character(lvls[currentRoom].startPoint[0]*32,512-lvls[currentRoom].startPoint[1]*32);
 }
 function draw(){
-  if(lvls[currentLvl].theme==0){background(93,148,251);}
-  else if(lvls[currentLvl].theme==1){}
-  else if(lvls[currentLvl].theme==2){}
-  else if(lvls[currentLvl].theme==3){}
-  else if(lvls[currentLvl].theme==4){background(219,252,255);}
+  if(lvls[currentRoom].theme==0){background(93,148,251);}
+  else if(lvls[currentRoom].theme==1){}
+  else if(lvls[currentRoom].theme==2){}
+  else if(lvls[currentRoom].theme==3){}
+  else if(lvls[currentRoom].theme==4){background(219,252,255);}
   ch.draw1();
 }
