@@ -4,7 +4,7 @@ function character(){
   ellipse(20,20,20,20);
   }
 }
-var ch;
+let ch;
 function setup{
   ch = new character();
 }
