@@ -1,4 +1,4 @@
-console.log(9);
+console.log(10);
 let lvls = [{
   world:1,
   lvl:1,
@@ -58,7 +58,7 @@ function character(ox, oy){
 let ch;
 function setup(){
   createCanvas(512,512)
-  ch = new character(lvls[currentRoom].startPoint[0]*32,512-lvls[currentRoom].startPoint[1]*32);
+  ch = new character(lvls[currentRoom].startPoint[0]*32+16,522-lvls[currentRoom].startPoint[1]*32);
 }
 function draw(){
   if(lvls[currentRoom].theme==0){background(93,148,251);}
