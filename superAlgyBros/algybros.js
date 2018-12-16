@@ -9,5 +9,5 @@ function setup(){
   ch = new character();
 }
 function draw(){
-  ch.draw;
+  ch.draw1();
 }
