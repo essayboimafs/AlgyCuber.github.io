@@ -1,4 +1,4 @@
-console.log(12);
+console.log(13);
 let lvls = [{
   world:1,
   lvl:1,
@@ -67,12 +67,12 @@ function draw(){
   else if(lvls[currentRoom].theme==2){}
   else if(lvls[currentRoom].theme==3){}
   else if(lvls[currentRoom].theme==4){background(219,252,255);}
-  for(let i=0;i<((xPassed/32%1==0)?16:18);i++){
+  for(let i=0;i<((xPassed/32%1==0)?16:17);i++){
     for(let j=0;j<16;j++){
       let currentXBlock = Math.floor(xPassed/32)+i;
       if(lvls[currentRoom].layout[currentXBlock][15-j]==1){
         fill(219,95,33);
-        rect(xPassed-currentXBlock*32,(15-j)*32,32,32);
+        rect(currentXBlock*32-xPassed,(15-j)*32,32,32);
       }
     }
   }
