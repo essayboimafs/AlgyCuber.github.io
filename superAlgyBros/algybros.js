@@ -1,4 +1,4 @@
-console.log(10);
+console.log(11);
 let lvls = [{
   world:1,
   lvl:1,
@@ -41,6 +41,7 @@ let lvls = [{
   10 = end point
 */
 let currentRoom = 0;
+let xPassed = 0;
 function character(ox, oy){
   this.x = ox;
   this.y = oy;
@@ -66,5 +67,14 @@ function draw(){
   else if(lvls[currentRoom].theme==2){}
   else if(lvls[currentRoom].theme==3){}
   else if(lvls[currentRoom].theme==4){background(219,252,255);}
+  for(let i=0;i<((xPassed/32%1==0)?16:18);i++){
+    for(let j=0;j<16;j++){
+      let currentXBlock = Math.floor(xPassed/32)+i;
+      if(lvls[currentRoom].layout[currentXBlock][15-j]==2){
+        fill(219,95,33);
+        rect(xPassed-currentXBlock*32,(15-j)*32,32,32);
+      }
+    }
+  }
   ch.draw1();
 }
