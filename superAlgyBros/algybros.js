@@ -1,4 +1,4 @@
-console.log(15);
+console.log(16);
 let lvls = [{
   world:1,
   lvl:1,
@@ -76,6 +76,6 @@ function draw(){
       }
     }
   }
-  fill(255);
+  fill(255,53,35);
   ch.draw1();
 }
