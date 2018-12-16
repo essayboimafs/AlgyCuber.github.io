@@ -1,9 +1,9 @@
-console.log(2);
+console.log(3);
 class character{
   character(){
     
   }
-  void draw1(){
+  function draw1(){
     ellipse(20,20,20,20);
   }
 }
