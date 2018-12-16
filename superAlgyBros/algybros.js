@@ -1,4 +1,4 @@
-console.log(1);
+console.log(2);
 class character{
   character(){
     
@@ -8,4 +8,4 @@ class character{
   }
 }
 let ch = new character();
-ch.draw();
+ch.draw1();
