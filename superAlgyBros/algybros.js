@@ -1,4 +1,4 @@
-console.log(4);
+console.log(5);
 function character(){
   this.draw1 = function(){
   ellipse(20,20,20,20);
