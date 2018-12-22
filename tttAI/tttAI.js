@@ -1,4 +1,4 @@
-console.log(5);
+console.log(6);
 let g = [0,0,0,0,0,0,0,0,0];
 let turn = 1;
 function setup(){
@@ -14,8 +14,8 @@ function draw(){
   line(100,0,100,300);
   line(200,0,200,300);
   for(i=0;i<9;i++){
-    if(g[i]>0){text('X',i%3*100+50,Math.floor(i/3)*100+50);}
-    else if(g[i]<0){text('O',i%3*100+50,Math.floor(i/3)*100+50);}
+    if(g[i]>0){text('X',i%3*100+50,Math.floor(i/3)*100+75);}
+    else if(g[i]<0){text('O',i%3*100+50,Math.floor(i/3)*100+75);}
   }
 }
 function move(sq){
