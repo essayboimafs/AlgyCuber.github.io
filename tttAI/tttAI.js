@@ -6,6 +6,7 @@ function setup(){
 }
 function draw(){
   textAlign(CENTER);
+  textSize(48);
   background(255);
   strokeWeight(3);
   line(0,100,300,100);
