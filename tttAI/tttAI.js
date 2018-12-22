@@ -1,4 +1,4 @@
-console.log(6);
+console.log(7);
 let g = [0,0,0,0,0,0,0,0,0];
 let turn = 1;
 function setup(){
@@ -16,6 +16,10 @@ function draw(){
   for(i=0;i<9;i++){
     if(g[i]>0){text('X',i%3*100+50,Math.floor(i/3)*100+65);}
     else if(g[i]<0){text('O',i%3*100+50,Math.floor(i/3)*100+65);}
+  }
+  if(turn<0){
+    let a = Math.floor(Math.random()*9);
+    if(g[a]==0){move(a);}
   }
 }
 function move(sq){
