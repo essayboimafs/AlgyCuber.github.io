@@ -67,7 +67,7 @@ function draw(){
   else if(lvls[currentRoom].theme==2){}
   else if(lvls[currentRoom].theme==3){}
   else if(lvls[currentRoom].theme==4){background(219,252,255);}
-  for(let i=0;i<((xPassed/32%1==0)?16:17);i++){
+  for(let i=-4;i<((xPassed/32%1==0)?20:21);i++){
     for(let j=0;j<16;j++){
       let currentXBlock = Math.floor(xPassed/32)+i;
       if(lvls[currentRoom].layout[currentXBlock][15-j]==1){
