@@ -14,8 +14,8 @@ function draw(){
   line(100,0,100,300);
   line(200,0,200,300);
   for(i=0;i<9;i++){
-    if(g[i]>0){text('X',i%3*100+50,Math.floor(i/3)*100+70);}
-    else if(g[i]<0){text('O',i%3*100+50,Math.floor(i/3)*100+70);}
+    if(g[i]>0){text('X',i%3*100+50,Math.floor(i/3)*100+65);}
+    else if(g[i]<0){text('O',i%3*100+50,Math.floor(i/3)*100+65);}
   }
 }
 function move(sq){
