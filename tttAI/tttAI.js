@@ -1,4 +1,4 @@
-console.log(8);
+console.log(9);
 let g = [0,0,0,0,0,0,0,0,0];
 let turn = 1;
 let over = false;
@@ -46,6 +46,6 @@ function mousePressed(){
     if(mouseY>0 && mouseY<100){sqY = 0;}
     else if(mouseY>100 && mouseY<200){sqY = 1;}
     else if(mouseY>200 && mouseY<300){sqY = 2;}
-    if(g[sqY*3+sqX]!=0){move(sqY*3+sqX);}
+    if(g[sqY*3+sqX]==0){move(sqY*3+sqX);}
   }
 }
