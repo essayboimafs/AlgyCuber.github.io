@@ -1,4 +1,4 @@
-console.log(17);
+console.log(18);
 let lvls = [{
   world:1,
   lvl:1,
@@ -70,9 +70,11 @@ function draw(){
   for(let i=-4;i<((xPassed/32%1==0)?20:21);i++){
     for(let j=0;j<16;j++){
       let currentXBlock = Math.floor(xPassed/32)+i;
-      if(currentXBlock>0 && lvls[currentRoom].layout[currentXBlock][15-j]==1){
-        fill(219,95,33);
-        rect(currentXBlock*32-xPassed,j*32,32,32);
+      if(currentXBlock>0 && currentXBlock<=lvls[currentRoom].layout.length){
+        if(lvls[currentRoom].layout[currentXBlock][15-j]==1){
+          fill(219,95,33);
+          rect(currentXBlock*32-xPassed,j*32,32,32);
+        }
       }
     }
   }
