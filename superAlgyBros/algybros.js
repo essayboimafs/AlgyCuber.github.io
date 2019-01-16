@@ -4,7 +4,7 @@ let lvls = [{
   lvl:1,
   room:0,
   displayName:'1-1',
-  theme:0, //0 = overworld, 1 = underground, 2 = island, 3 = castle, 4 = sky, 5 = underwater
+  theme:0, //0 = overworld, 1 = underground, 3 = underwater, 4 = sky, 5 = castle
   night:false,
   snow:false,
   layout:[[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -70,7 +70,7 @@ function draw(){
   for(let i=-4;i<((xPassed/32%1==0)?20:21);i++){
     for(let j=0;j<16;j++){
       let currentXBlock = Math.floor(xPassed/32)+i;
-      if(lvls[currentRoom].layout[currentXBlock][15-j]==1){
+      if(currentXBlock>0 && lvls[currentRoom].layout[currentXBlock][15-j]==1){
         fill(219,95,33);
         rect(currentXBlock*32-xPassed,j*32,32,32);
       }
