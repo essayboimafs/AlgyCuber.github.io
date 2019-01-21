@@ -5,8 +5,6 @@ let lvls = [{
   room:0,
   displayName:'1-1',
   theme:0, //0 = overworld, 1 = underground, 3 = underwater, 4 = sky, 5 = castle
-  night:false,
-  snow:false,
   layout:[[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -31,14 +29,14 @@ let lvls = [{
   0 = empty
   1 = ground
   2 = brick
-  3 = stair
+  3 = hard block
   4 = coin
-  5 = question
-  6 = invis question
+  5 = question block
+  6 = kaizo block
   7 = pipe top
   8 = pipe shaft
   9 = question done
-  10 = end point
+  10 = flagpole
 */
 let currentRoom = 0;
 let xPassed = 0;
@@ -72,7 +70,7 @@ function draw(){
       let currentXBlock = Math.floor(xPassed/32)+i;
       if(currentXBlock>=0 && currentXBlock<lvls[currentRoom].layout.length){
         if(lvls[currentRoom].layout[currentXBlock][15-j]==1){
-          fill(219,95,33);
+          fill(218,255,35);
           rect(currentXBlock*32-xPassed,j*32,32,32);
         }
       }
