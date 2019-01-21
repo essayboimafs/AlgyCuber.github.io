@@ -70,7 +70,8 @@ function draw(){
       let currentXBlock = Math.floor(xPassed/32)+i;
       if(currentXBlock>=0 && currentXBlock<lvls[currentRoom].layout.length){
         if(lvls[currentRoom].layout[currentXBlock][15-j]==1){
-          fill(218,255,35);
+          fill(143,244,66);
+          noStroke();
           rect(currentXBlock*32-xPassed,j*32,32,32);
         }
       }
