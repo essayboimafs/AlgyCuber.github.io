@@ -1,4 +1,4 @@
-console.log(8);
+console.log(9);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let fc = [255,255,255];
@@ -15,6 +15,6 @@ function draw(){
   fill(255);
   rect(650,100,650,32);
 }
-function keyPressed(){
-  if(shiftKey){console.log(hi);}
+function keyPressed(k){
+  if(k.shiftKey){console.log(hi);}
 }
