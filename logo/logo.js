@@ -16,5 +16,10 @@ function draw(){
   rect(650,100,650,32);
 }
 function keyPressed(k){
-  if(k.shiftKey){console.log('hi');}
+  if(k.shiftKey){
+    
+  }
+  else{
+    
+  }
 }
