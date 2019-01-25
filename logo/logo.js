@@ -1,8 +1,15 @@
-console.log(2);
+console.log(3);
 let input;
+let sc = [255,255,255];
+let pc = [255,255,255];
+let fc = [255,255,255];
 function setup(){
   createCanvas(1200,1000);
 }
 function draw(){
   background(255);
+  stroke(0);
+  strokeWeight(1);
+  fill(sc[0],sc[1],sc[2]);
+  rect(0,0,1000,1000);
 }
