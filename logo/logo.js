@@ -1,9 +1,7 @@
-console.log(1);
+console.log(2);
 let input;
 function setup(){
-  createCanvas(1000,1000);
-  input = createInput();
-  input.position(1050,50);
+  createCanvas(1200,1000);
 }
 function draw(){
   background(255);
