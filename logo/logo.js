@@ -1,8 +1,8 @@
-console.log(5);
-let input;
+console.log(6);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let fc = [255,255,255];
+let inp = '';
 function setup(){
   createCanvas(1301,601);
 }
@@ -14,4 +14,7 @@ function draw(){
   rect(0,0,600,600);
   fill(255);
   rect(650,100,650,32);
+}
+window.onkeydown = function(k){
+  console.log(k);
 }
