@@ -4,7 +4,7 @@ let sc = [255,255,255];
 let pc = [255,255,255];
 let fc = [255,255,255];
 function setup(){
-  createCanvas(801,601);
+  createCanvas(1301,601);
 }
 function draw(){
   background(255);
@@ -13,5 +13,5 @@ function draw(){
   fill(sc[0],sc[1],sc[2]);
   rect(0,0,600,600);
   fill(255);
-  rect(650,100,150,32);
+  rect(650,100,650,32);
 }
