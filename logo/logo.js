@@ -9,7 +9,7 @@ function setup(){
   inp.style.position = 'absolute';
   inp.style.left = '650px';
   inp.style.top = '100px';
-  inp.width = '400px';
+  inp.width = '400;
 }
 function draw(){
   background(255);
