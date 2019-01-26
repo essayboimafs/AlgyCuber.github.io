@@ -1,15 +1,15 @@
-console.log(11);
+console.log(12);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let fc = [255,255,255];
 let cmd = '';
 function setup(){
   createCanvas(601,601);
-  document.body.innerHTML += '<input id="inp">';
+  /*document.body.innerHTML += '<input id="inp">';
   inp.style.position = 'absolute';
   inp.style.left = '650px';
   inp.style.top = '100px';
-  inp.width = '400;
+  inp.width = 400;*/
 }
 function draw(){
   background(255);
