@@ -1,8 +1,9 @@
-console.log(13);
+console.log(14);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let fc = [255,255,255];
 let cmd = '';
+let inp = createInput();
 function setup(){
   createCanvas(601,601);
 }
