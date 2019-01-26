@@ -17,8 +17,4 @@ function draw(){
   strokeWeight(1);
   fill(sc[0],sc[1],sc[2]);
   rect(0,0,600,600);
-  
-}
-function keyPressed(k){
-  
 }
